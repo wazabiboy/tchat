@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>TotoroLand</title>
+    <style>
+    </style>
+  </head>
+  <body id="logged-out">
+    <section class="logo">
+      <img src="https://i.pinimg.com/originals/a6/a7/2d/a6a72d92b4fea093d11326ccc1eb2100.png" alt="">
+<h2>TotoroLand</h2>
+</section>
+
+
+
+    <section id="chat">
+      <ul id="messages">
+      </ul><ul id="users">
+      </ul>
+      <form action="">
+        <input id="m" autocomplete="off" /><button>Send</button>
+      </form>
+    </section>
+    <section id="login">
+      <form action="">
+        <label for="u">Entrez votre pseudo</label>
+        <input id="u" autocomplete="off" autofocus />
+        <p>
+          <button>Discutez</button>
+        </p>
+      </form>
+    </section>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>
