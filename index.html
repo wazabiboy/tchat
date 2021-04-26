@@ -92,7 +92,7 @@ section#login button {
 
 
     <script src="/socket.io/socket.io.js"></script>
-
+<script>
     let socket = io();
 
     let messages = document.getElementById('messages');
@@ -113,21 +113,7 @@ section#login button {
       messages.appendChild(item);
       window.scrollTo(0, document.body.scrollHeight);
     });
-    
-    /**
-    * Connexion d'un utilisateur
-    */
-   $('#login form').submit(function (e) {
-     e.preventDefault();
-     var user = {
-       username : $('#login input').val().trim()
-     };
-     if (user.username.length > 0) { // Si le champ de connexion n'est pas vide
-       socket.emit('user-login', user);
-       $('body').removeAttr('id'); // Cache formulaire de connexion
-       $('#chat input').focus(); // Focus sur le champ du message
-     }
-   });
+
    </script>
 
    
